@@ -1,0 +1,198 @@
+import { Category, Difficulty } from '../types';
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'logic',
+    name: 'ألغاز الذكاء والمنطق',
+    icon: 'Brain',
+    description: 'ألغاز ذهنية، أحاجي ذكية، وتفكير نقدي يحفز العقل',
+    color: 'from-amber-500 to-rose-500',
+    bgGradient: 'bg-gradient-to-br from-amber-500/15 via-rose-500/10 to-transparent',
+    borderAccent: 'border-amber-500/40',
+  },
+  {
+    id: 'geography',
+    name: 'الجغرافيا',
+    icon: 'Globe2',
+    description: 'عواصم العالم، تضاريس، دول، وبحار ومحيطات',
+    color: 'from-emerald-500 to-teal-600',
+    bgGradient: 'bg-gradient-to-br from-emerald-500/15 via-teal-500/10 to-transparent',
+    borderAccent: 'border-emerald-500/40',
+  },
+  {
+    id: 'history',
+    name: 'التاريخ',
+    icon: 'Scroll',
+    description: 'حضارات قديمة، معارك فاصلة، وشخصيات تاريخية بارزة',
+    color: 'from-orange-500 to-amber-600',
+    bgGradient: 'bg-gradient-to-br from-orange-500/15 via-amber-500/10 to-transparent',
+    borderAccent: 'border-orange-500/40',
+  },
+  {
+    id: 'football',
+    name: 'كرة القدم',
+    icon: 'Trophy',
+    description: 'كؤوس العالم، أبطال الدوريات، وأرقام قياسية كروية',
+    color: 'from-green-500 to-emerald-700',
+    bgGradient: 'bg-gradient-to-br from-green-500/15 via-emerald-600/10 to-transparent',
+    borderAccent: 'border-green-500/40',
+  },
+  {
+    id: 'science',
+    name: 'العلوم',
+    icon: 'Atom',
+    description: 'فيزياء، كيمياء، أحياء، واستكشاف الفضاء والكون',
+    color: 'from-cyan-500 to-blue-600',
+    bgGradient: 'bg-gradient-to-br from-cyan-500/15 via-blue-500/10 to-transparent',
+    borderAccent: 'border-cyan-500/40',
+  },
+  {
+    id: 'islamic',
+    name: 'الثقافة الإسلامية',
+    icon: 'Moon',
+    description: 'القرآن الكريم، السيرة النبوية، الفقه، والتاريخ الإسلامي',
+    color: 'from-teal-500 to-emerald-600',
+    bgGradient: 'bg-gradient-to-br from-teal-500/15 via-emerald-500/10 to-transparent',
+    borderAccent: 'border-teal-500/40',
+  },
+  {
+    id: 'technology',
+    name: 'المعلوماتية والتكنولوجيا',
+    icon: 'Laptop',
+    description: 'برمجة، ذكاء اصطناعي، شبكات، وابتكارات رقمية',
+    color: 'from-indigo-500 to-violet-600',
+    bgGradient: 'bg-gradient-to-br from-indigo-500/15 via-violet-500/10 to-transparent',
+    borderAccent: 'border-indigo-500/40',
+  },
+  {
+    id: 'general',
+    name: 'الثقافة العامة',
+    icon: 'Sparkles',
+    description: 'معلومات عامة، سينما، أمثال وحقائق شيقة ومفيدة',
+    color: 'from-purple-500 to-pink-600',
+    bgGradient: 'bg-gradient-to-br from-purple-500/15 via-pink-500/10 to-transparent',
+    borderAccent: 'border-purple-500/40',
+  },
+  {
+    id: 'math',
+    name: 'الرياضيات',
+    icon: 'Binary',
+    description: 'حساب ذهني، جبر، هندسة، ومتتاليات حسابية ممتعة',
+    color: 'from-blue-500 to-indigo-600',
+    bgGradient: 'bg-gradient-to-br from-blue-500/15 via-indigo-500/10 to-transparent',
+    borderAccent: 'border-blue-500/40',
+  },
+  {
+    id: 'art',
+    name: 'الفن والثقافة',
+    icon: 'Palette',
+    description: 'لوحات عالمية، أدب وشعر، وموسيقى وعمارة خالدة',
+    color: 'from-rose-500 to-pink-600',
+    bgGradient: 'bg-gradient-to-br from-rose-500/15 via-pink-500/10 to-transparent',
+    borderAccent: 'border-rose-500/40',
+  },
+  {
+    id: 'turkish_series',
+    name: 'مسلسلات تركية',
+    icon: 'Tv',
+    description: 'دراما تركية، وادي الذئاب، قيامة أرطغرل، وشخصيات وأحداث مشوقة',
+    color: 'from-red-600 to-rose-700',
+    bgGradient: 'bg-gradient-to-br from-red-600/15 via-rose-600/10 to-transparent',
+    borderAccent: 'border-red-500/40',
+  },
+  {
+    id: 'tunisia',
+    name: 'دولة تونس',
+    icon: 'Landmark',
+    description: 'تاريخ الخضراء، قرطاج، معالم أثرية، شخصيات وثقافة تونسية أصيلة',
+    color: 'from-rose-500 to-amber-600',
+    bgGradient: 'bg-gradient-to-br from-rose-500/15 via-amber-600/10 to-transparent',
+    borderAccent: 'border-rose-500/40',
+  },
+  {
+    id: 'military',
+    name: 'المجال العسكري',
+    icon: 'Swords',
+    description: 'تاريخ الحروب والجيوش، الرتب العسكرية، القادة، والتكتيكات والاستراتيجيات',
+    color: 'from-amber-600 via-stone-600 to-slate-800',
+    bgGradient: 'bg-gradient-to-br from-amber-600/15 via-stone-600/10 to-transparent',
+    borderAccent: 'border-amber-600/40',
+  },
+  {
+    id: 'anime',
+    name: 'عالم الأنمي',
+    icon: 'Flame',
+    description: 'ون بيس، ناروتو، هجوم العمالقة، ديمون سلاير، وشخصيات وقوى الأنمي المشهورة',
+    color: 'from-rose-500 via-purple-600 to-indigo-700',
+    bgGradient: 'bg-gradient-to-br from-rose-500/15 via-purple-600/10 to-transparent',
+    borderAccent: 'border-purple-500/40',
+  },
+  {
+    id: 'kung_fu',
+    name: 'رياضة الكونغ فو',
+    icon: 'Target',
+    description: 'معبد شاولين، أساليب الووشو، وينغ تشون، بروس لي، ومفاهيم الطاقة والانضباط',
+    color: 'from-amber-500 via-red-600 to-yellow-600',
+    bgGradient: 'bg-gradient-to-br from-amber-500/15 via-red-600/10 to-transparent',
+    borderAccent: 'border-amber-500/40',
+  },
+];
+
+export interface DifficultyConfig {
+  id: Difficulty;
+  name: string;
+  badge: string;
+  points: number;
+  color: string;
+  bgColor: string;
+  borderColor: string;
+  icon: string;
+  description: string;
+}
+
+export const DIFFICULTIES: Record<Difficulty, DifficultyConfig> = {
+  easy: {
+    id: 'easy',
+    name: 'سهل',
+    badge: '🟢 سهل',
+    points: 10,
+    color: 'text-emerald-400',
+    bgColor: 'bg-emerald-500/10 hover:bg-emerald-500/20',
+    borderColor: 'border-emerald-500/40',
+    icon: 'CheckCircle2',
+    description: 'أسئلة بسيطة ومباشرة ومناسبة للمبتدئين وللانطلاق السريع.',
+  },
+  medium: {
+    id: 'medium',
+    name: 'متوسط',
+    badge: '🟡 متوسط',
+    points: 20,
+    color: 'text-amber-400',
+    bgColor: 'bg-amber-500/10 hover:bg-amber-500/20',
+    borderColor: 'border-amber-500/40',
+    icon: 'Zap',
+    description: 'أسئلة تحتاج إلى بعض التفكير والمعرفة العامة المتوازنة.',
+  },
+  hard: {
+    id: 'hard',
+    name: 'صعب',
+    badge: '🟠 صعب',
+    points: 30,
+    color: 'text-orange-400',
+    bgColor: 'bg-orange-500/10 hover:bg-orange-500/20',
+    borderColor: 'border-orange-500/40',
+    icon: 'Flame',
+    description: 'أسئلة تتطلب تركيزاً ودقة ومعرفة متخصصة بالمعلومات الدقيقة.',
+  },
+  expert: {
+    id: 'expert',
+    name: 'صعب جدًا',
+    badge: '🔴 صعب جدًا',
+    points: 50,
+    color: 'text-rose-400',
+    bgColor: 'bg-rose-500/10 hover:bg-rose-500/20',
+    borderColor: 'border-rose-500/40',
+    icon: 'ShieldAlert',
+    description: 'أسئلة متقدمة وتحديات نادرة تختبر عمالقة المعرفة وأصحاب الذاكرة القوية!',
+  },
+};

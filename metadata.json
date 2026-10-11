@@ -1,0 +1,6 @@
+{
+  "name": "تحدي المعرفة",
+  "description": "تطبيق أسئلة وألغاز تفاعلي باللغة العربية في 15 مجالاً مع 4 مستويات صعوبة ونظام نقاط وإنجازات متقدم",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

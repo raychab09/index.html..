@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>تحدي المعرفة</title>
+    <meta name="description" content="تطبيق أسئلة وألغاز تفاعلي باللغة العربية في 15 مجالاً مع 4 مستويات صعوبة ونظام نقاط وإنجازات متقدم" />
+    <meta property="og:title" content="تحدي المعرفة" />
+    <meta property="og:description" content="تطبيق أسئلة وألغاز تفاعلي باللغة العربية في 15 مجالاً مع 4 مستويات صعوبة ونظام نقاط وإنجازات متقدم" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="معرفة" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-['Tajawal',sans-serif] antialiased select-none selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
