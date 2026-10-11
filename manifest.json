@@ -1,0 +1,18 @@
+{
+  "name": "Quiz r",
+  "short_name": "معرفة",
+  "description": "تطبيق أسئلة وألغاز تفاعلي باللغة العربية مع 4 مستويات صعوبة ونظام نقاط وإنجازات متقدم",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1alaze",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "launchicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
