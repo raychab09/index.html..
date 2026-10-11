@@ -1,0 +1,17 @@
+{
+  "name": "لعبة معرفة",
+  "short_name": "معرفة",
+  "description": "لعبة تحدي وألغاز ثقافة ومعرفة ممتعة.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16213e",
+  "theme_color": "#1a1a2e",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
